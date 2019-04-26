@@ -1,0 +1,16 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+#imported csv to notebook
+#changed indicator names from "." to "_"
+dframe6 = pd.read_csv("df6TABLE.csv")
+dframe6.head()
+
+x = dframe6.SE_XPD_PRIM_PC_ZS
+y = dframe6.SE_XPD_SECO_PC_ZS
+
+
+plt.scatter(x, y)
+
+plt.show()
